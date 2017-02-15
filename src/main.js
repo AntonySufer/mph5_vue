@@ -6,9 +6,9 @@ import { directive } from './directive.js';
 import vueResource from 'vue-resource';
 var VueValidator = require('vue-validator');
 
-Vue.use(VueValidator);
+
 Vue.use(VueRouter);//通过全局方法use使用vue-router插件
-Vue.use(vueResource); //配置ajax请求
+
 
 Vue.validator('url', function (val) {
   return /^(http\:\/\/|https\:\/\/)(.{4,})$/.test(val);
